@@ -4,5 +4,5 @@ php:
 - tip
 
 script: make test
-	make coverage
+        make coverage
 
