@@ -1,7 +1,7 @@
 package servicetest
 
 import (
-	"github.com/devkgp/abTest/src/sqldb"
+	"github.com/devKgp/abTest/src/sqldb"
 	gk "github.com/onsi/ginkgo"
 	gm "github.com/onsi/gomega"
 	"testing"
