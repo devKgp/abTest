@@ -21,10 +21,10 @@ var _ = gk.Describe("Test mysql impl", func() {
 		// fill valid driver, invalid db details
 		conf.DriverName = sqldb.MYSQL // set driver name as mysql
 		conf.Username = "root"
-		conf.Password = "root"
+		conf.Password = ""
 		conf.Host = "localhost"
 		conf.Port = "3306"
-		conf.Dbname = "invalid"
+		conf.Dbname = "florest"
 		conf.Timezone = "Local"
 		conf.MaxOpenCon = 2
 		conf.MaxIdleCon = 1
