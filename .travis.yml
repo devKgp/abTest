@@ -1,0 +1,6 @@
+language: go
+php:
+- 1.6
+- tip
+
+install: make coverage
