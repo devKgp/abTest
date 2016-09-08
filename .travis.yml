@@ -6,6 +6,10 @@ go:
 before_script:
   - mysql -e 'create database gotest;'
 
+install:
+- go get github.com/onsi/ginkgo/ginkgo
+- go get github.com/onsi/gomega
+
 script:
 - make test
 - make coverage
