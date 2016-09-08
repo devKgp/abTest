@@ -1,8 +1,12 @@
 language: go
-php:
+go:
 - 1.6
 - tip
 
-script: make test
-        make coverage
+before_script:
+  - mysql -e 'create database gotest;'
+
+script:
+- make test
+- make coverage
 
