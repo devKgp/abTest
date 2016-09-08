@@ -3,4 +3,4 @@ php:
 - 1.6
 - tip
 
-install: make coverage
+script: make coverage
