@@ -1,7 +1,10 @@
 language: go
+env:
+  global:
+  - COVERALLS_TOKEN=5JLz3Ak74SEJyPCH7S0epA1aeBEaA0tiR
 go:
-- 1.6
-- tip
+  - 1.6
+  - tip
 
 services:
   - mysql
@@ -14,8 +17,8 @@ before_script:
 install:
 - go get github.com/onsi/ginkgo/ginkgo
 - go get github.com/onsi/gomega
+- go get github.com/mattn/goveralls
 
 script:
-- make test
-- make coverage
+- $HOME/gopath/bin/goveralls -service=travis-ci
 
