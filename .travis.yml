@@ -10,7 +10,6 @@ services:
 before_script:
   - sleep 15
   - mysql -e 'create database florest;'
-  - mongo mydb_test
 
 install:
 - go get github.com/onsi/ginkgo/ginkgo
