@@ -1,0 +1,3 @@
+[submodule "florest-core"]
+	path = florest-core
+	url = https://github.com/jabong/florest-core
